@@ -195,15 +195,6 @@ export default function Home() {
 
         {/* SERVICES */}
         <section id="services" className="max-w-6xl mx-auto px-5 sm:px-8 py-14">
-          <motion.h2
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5 }}
-            className="text-3xl font-semibold mb-6 text-center lg:text-left"
-          >
-            Our Services
-          </motion.h2>
           <BentoGridDemo />
         </section>
 
@@ -467,7 +458,7 @@ export default function Home() {
               {/* BRAND INFO */}
               <div>
                 <div className="flex items-center space-x-2 mb-4">
-                  <img src="/logo.png" alt="Tathagat Labs Logo" width={36} />
+                  <img src="/logo.PNG" alt="Tathagat Labs Logo" width={36} />
                   <h3 className="text-xl font-semibold text-purple-700 dark:text-purple-300">
                     Tathagat Labs
                   </h3>

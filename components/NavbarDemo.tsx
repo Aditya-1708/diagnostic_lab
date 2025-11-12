@@ -5,7 +5,6 @@ import {
   NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -16,7 +15,7 @@ export function NavbarDemo() {
   const navItems = [
     { name: "Home", link: "#home" },
     { name: "Services", link: "#services" },
-    { name: "About Us", link: "#aboutus" },
+    { name: "About Us", link: "#about" },
     { name: "Testimonials", link: "#testimonials" },
   ];
 
@@ -28,7 +27,10 @@ export function NavbarDemo() {
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
-          <NavItems items={navItems} />
+          <NavItems
+            items={navItems}
+            className="text-base md:text-lg font-semibold tracking-wide"
+          />
         </NavBody>
 
         {/* Mobile Navigation */}
@@ -50,7 +52,7 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-700 dark:text-neutral-300 text-lg font-medium hover:text-indigo-600 transition"
+                className="relative text-neutral-800 dark:text-neutral-200 text-lg sm:text-xl font-semibold py-2 w-full text-center hover:text-purple-600 transition"
               >
                 {item.name}
               </a>
