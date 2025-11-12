@@ -1,0 +1,68 @@
+const services = [
+  "Doctor Consultation",
+  "ECG",
+  "ECHO",
+  "Treadmill",
+  "Blood Test",
+  "Scans",
+];
+const coreValues = [
+  " Customer Satisfaction",
+  "Highest Quality",
+  "Integrity",
+  "Innovation",
+  "Team Work",
+];
+
+const testimonials = [
+  {
+    name: "Vijay Prakash",
+    response:
+      "Very quick and old-age friendly lab. They guided me very patiently.",
+  },
+  {
+    name: "Lakshmi Narayan",
+    response:
+      "The home sample collection was smooth. Technician was polite and well trained.",
+  },
+  {
+    name: "Sushma Devi",
+    response:
+      "Reports were delivered on WhatsApp within a few hours. Very convenient for elders.",
+  },
+  {
+    name: "Ramesh Gowda",
+    response:
+      "Clean facility, modern machines, and supportive staff. Trustworthy service.",
+  },
+  {
+    name: "Farida Khan",
+    response:
+      "I didn't have to wait at all. Very organized and hygienic. Highly recommended.",
+  },
+  {
+    name: "Anil Kumar",
+    response:
+      "Prices are reasonable and service quality is excellent. Good for regular checkups.",
+  },
+  {
+    name: "Meena R",
+    response:
+      "They explained my reports clearly without rushing. Very caring staff.",
+  },
+  {
+    name: "Arvind Sharma",
+    response:
+      "The technician came to my home and was very respectful and gentle with my parents.",
+  },
+  {
+    name: "Jayashree Patil",
+    response:
+      "Booking a test was simple. The staff treated my mother very kindly.",
+  },
+  {
+    name: "Joseph Stephen",
+    response:
+      "Accurate reports and professional behavior. I trust this lab for all our family checkups.",
+  },
+];
