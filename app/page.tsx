@@ -458,7 +458,7 @@ export default function Home() {
               {/* BRAND INFO */}
               <div>
                 <div className="flex items-center space-x-2 mb-4">
-                  <img src="/logo.png" alt="Tathagat Labs Logo" width={36} />
+                  <img src="/logo.jpeg" alt="Tathagat Labs Logo" width={36} />
                   <h3 className="text-xl font-semibold text-sky-700 dark:text-sky-300">
                     Tathagat Labs
                   </h3>

@@ -176,7 +176,7 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => (
   <a href="#" className="flex items-center gap-2">
-    <img src="/logo.png" alt="logo" width={30} height={30} />
+    <img src="/logo.jpeg" alt="logo" width={30} height={30} />
     <span className="font-semibold text-lg bg-gradient-to-r from-sky-600 to-cyan-500 bg-clip-text text-transparent">
       Tathagat Labs
     </span>
