@@ -1,16 +1,16 @@
 "use client";
 
-import React from "react";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
-  IconHeartPause,
-  IconActivityHeartbeat,
-  IconStethoscope,
-  IconRun,
-  IconDroplet,
-  IconScan,
-  IconClipboardCopy,
+    IconActivityHeartbeat,
+    IconClipboardCopy,
+    IconDroplet,
+    IconHeartPause,
+    IconRun,
+    IconScan,
+    IconStethoscope,
 } from "@tabler/icons-react";
+import Link from "next/link";
+import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
 export function BentoGridDemo() {
   return (
@@ -21,18 +21,20 @@ export function BentoGridDemo() {
 
       <BentoGrid className="max-w-6xl mx-auto px-6">
         {items.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            header={item.header}
-            icon={item.icon}
-            className={
-              i === 3 || i === 6
-                ? "md:col-span-2"
-                : "" /* Makes TMT and Delivery wider */
-            }
-          />
+          <Link 
+            key={i} 
+            href={`https://wa.me/919900356000?text=Hi, I would like to inquire about ${item.title}`}
+            target="_blank"
+            className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          >
+            <BentoGridItem
+              title={item.title}
+              description={item.description}
+              header={item.header}
+              icon={item.icon}
+              className="h-full"
+            />
+          </Link>
         ))}
       </BentoGrid>
     </div>
@@ -57,7 +59,7 @@ const items = [
   {
     title: "ECG (Electrocardiogram)",
     description:
-      "Quick and painless heart rhythm analysis to detect irregularities and monitor cardiovascular health.",
+      "Essential for early diagnosis. Quick and painless heart rhythm analysis to detect irregularities and monitor cardiovascular health.",
     header: (
       <img
         src="/ecg.jpg"
@@ -70,7 +72,7 @@ const items = [
   {
     title: "ECHO (Echocardiogram)",
     description:
-      "High-precision imaging of your heart using ultrasound to evaluate structure, motion, and blood flow.",
+      "Crucial for heart health. High-precision imaging using ultrasound to evaluate structure, motion, and blood flow.",
     header: (
       <img
         src="/echo.webp"
@@ -94,9 +96,9 @@ const items = [
     icon: <IconRun className="h-5 w-5 text-emerald-500" />,
   },
   {
-    title: "Blood Tests",
+    title: "Blood Tests & Health Packages",
     description:
-      "Comprehensive lab analysis for glucose, cholesterol, thyroid, and more — all done with hygienic, single-use kits.",
+      "Master health checkups, mini packages, and comprehensive lab analysis — all done with hygienic, single-use kits.",
     header: (
       <img
         src="/bt.webp"
@@ -133,3 +135,4 @@ const items = [
     icon: <IconClipboardCopy className="h-5 w-5 text-fuchsia-500" />,
   },
 ];
+
