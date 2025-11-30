@@ -122,7 +122,7 @@ const items = [
     icon: <IconScan className="h-5 w-5 text-indigo-500" />,
   },
   {
-    title: "Report Delivery & Records",
+    title: "Home Collection & Report Delivery",
     description:
       "Get your reports delivered securely via WhatsApp or email — accessible 24×7 from anywhere.",
     header: (
