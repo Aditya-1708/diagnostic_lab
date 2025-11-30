@@ -2,6 +2,7 @@
 
 import { BentoGridDemo } from "@/components/BentoDemo";
 import { NavbarDemo } from "@/components/NavbarDemo";
+import { Packages } from "@/components/Packages";
 import { Specialists } from "@/components/Specialists";
 import { motion, Variants } from "framer-motion";
 import { ChevronRight, MessageCircle, Phone, Shield } from "lucide-react";
@@ -47,13 +48,13 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-neutral-950 text-gray-900 dark:text-white overflow-hidden">
+    <div className="min-h-screen text-gray-900 dark:text-white overflow-hidden">
       <NavbarDemo />
 
       <main className="pt-12 md:pt-20"> {/* Reduced top padding for mobile */}
 
         {/* HERO SECTION */}
-        <section className="max-w-7xl mx-auto px-5 sm:px-8 py-6 md:py-16 flex flex-col lg:flex-row items-center gap-10">
+        <section id="home" className="max-w-7xl mx-auto px-5 sm:px-8 py-6 md:py-16 flex flex-col lg:flex-row items-center gap-10">
           <motion.div variants={stagger} initial="hidden" animate="visible" className="flex-1 text-center lg:text-left space-y-5">
             
 
@@ -92,6 +93,9 @@ export default function Home() {
             </div>
           </motion.div>
         </section>
+
+        {/* PACKAGES */}
+        <Packages />
 
         {/* SERVICES */}
         <section id="services" className="max-w-6xl mx-auto px-5 sm:px-8 py-10">

@@ -1,19 +1,19 @@
 "use client";
+import { useEffect, useState } from "react";
 import {
-  Navbar,
-  NavBody,
-  NavItems,
-  MobileNav,
-  NavbarLogo,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
+    MobileNav,
+    MobileNavHeader,
+    MobileNavMenu,
+    MobileNavToggle,
+    Navbar,
+    NavbarLogo,
+    NavBody
 } from "./ui/resizable-navbar";
-import { useState, useEffect } from "react";
 
 export function NavbarDemo() {
   const navItems = [
     { name: "Home", link: "#home" },
+    { name: "Packages", link: "#packages" },
     { name: "Services", link: "#services" },
     { name: "About Us", link: "#about" },
     { name: "Testimonials", link: "#testimonials" },
@@ -50,8 +50,10 @@ export function NavbarDemo() {
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody className="px-8 py-3 rounded-full border border-sky-100/60 dark:border-cyan-900/40 backdrop-blur-xl bg-white/80 dark:bg-neutral-950/70 shadow-[0_2px_20px_rgba(0,0,0,0.03)]">
-          <NavbarLogo />
-          <div className="flex items-center space-x-8">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <NavbarLogo />
+          </div>
+          <div className="flex items-center space-x-8 ml-auto">
             {navItems.map((item) => (
               <a
                 key={item.link}
