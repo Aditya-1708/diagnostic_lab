@@ -15,7 +15,7 @@ const packages = [
       "PPBS (Post Prandial Blood Sugar)",
       "HbA1C (Glycosylated Haemoglobin)",
       "Lipid Profile Test (LPT)",
-      "Urine Routine"
+      "Urine Routine",
     ],
     color: "from-blue-500 to-cyan-500",
   },
@@ -34,10 +34,10 @@ const packages = [
       "Lipid Profile Test",
       "Liver Function Test",
       "Urine Routine",
-      "ECG"
+      "ECG",
     ],
     color: "from-purple-500 to-indigo-500",
-    popular: true
+    popular: true,
   },
   {
     title: "MINI GENERAL CHECKUP - 2",
@@ -53,7 +53,7 @@ const packages = [
       "Lipid Profile Test",
       "Liver Function Test",
       "Urine Routine",
-      "ECG"
+      "ECG",
     ],
     color: "from-green-500 to-emerald-500",
   },
@@ -74,7 +74,7 @@ const packages = [
       "Lipid Profile Test",
       "EGFR",
       "Urine Analysis",
-      "Urine Microalbuminurea"
+      "Urine Microalbuminurea",
     ],
     color: "from-rose-500 to-red-500",
   },
@@ -95,10 +95,10 @@ const packages = [
       "Vitamin D-3",
       "ECG",
       "TFT",
-      "HbA1C"
+      "HbA1C",
     ],
     color: "from-yellow-500 to-orange-500",
-    popular: true
+    popular: true,
   },
   {
     title: "DIABETIC HEALTH PACKAGE",
@@ -119,7 +119,7 @@ const packages = [
       "Vitamin D-3",
       "EGFR",
       "Urine Analysis",
-      "Urine Microalbuminurea"
+      "Urine Microalbuminurea",
     ],
     color: "from-lime-500 to-teal-500",
   },
@@ -144,9 +144,9 @@ const packages = [
       "Vitamin D-3",
       "ECG",
       "Ultrasound Scan",
-      "Chest X-Ray"
+      "Chest X-Ray",
     ],
-    color: "from-gray-500 to-zinc-500",
+    color: "from-lime-500 to-teal-500",
   },
   {
     title: "TATHAGAT GOLD HEALTH CHECKUP",
@@ -170,10 +170,10 @@ const packages = [
       "ECG",
       "2D Echo",
       "Ultrasound Scan",
-      "Chest X-Ray"
+      "Chest X-Ray",
     ],
     color: "from-amber-500 to-yellow-600",
-    popular: true
+    popular: true,
   },
   {
     title: "TATHAGAT DIAMOND HEALTH CHECKUP",
@@ -198,11 +198,11 @@ const packages = [
       "2D Echo",
       "TMT",
       "Ultrasound Scan",
-      "Chest X-Ray"
+      "Chest X-Ray",
     ],
     color: "from-sky-500 to-indigo-500",
-    popular: true
-  }
+    popular: true,
+  },
 ];
 
 export function Packages() {
@@ -213,7 +213,8 @@ export function Packages() {
           Health Packages
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Choose a package that suits your needs. Affordable, comprehensive, and accurate.
+          Choose a package that suits your needs. Affordable, comprehensive, and
+          accurate.
         </p>
       </div>
 
@@ -225,11 +226,10 @@ export function Packages() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: idx * 0.1, duration: 0.5 }}
             viewport={{ once: true }}
-            className={`relative p-8 rounded-3xl border bg-white dark:bg-neutral-900 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col ${
-              pkg.popular
-                ? "border-rose-200 dark:border-rose-900 scale-105 z-10"
-                : "border-slate-100 dark:border-neutral-800"
-            }`}
+            className={`relative p-8 rounded-3xl border bg-red-100/50 dark:bg-red-950/20 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col ${pkg.popular
+                ? "border-red-200 dark:border-red-900 scale-105 z-10"
+                : "border-red-200 dark:border-red-900/50"
+              }`}
           >
             {pkg.popular && (
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-rose-500 to-red-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
@@ -243,18 +243,37 @@ export function Packages() {
               </h3>
               <div className="flex flex-col">
                 <div className="flex items-baseline gap-2">
-                  <span className={`text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r ${pkg.color}`}>
+                  <span
+                    className={`text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r ${pkg.color}`}
+                  >
                     {pkg.price}
                   </span>
                   {pkg.total && (
-                    <span className="text-gray-400 line-through text-lg">
-                      {pkg.total}
+                    <span
+                      className="text-red-500 dark:text-red-400 
+                   line-through text-xl font-semibold
+                   opacity-80"
+                    >
+                      <motion.span
+                        initial={{ x: 0 }}
+                        animate={{ x: [0, -2, 2, -2, 2, 0] }}
+                        transition={{ duration: 0.4 }}
+                        className="text-red-500 line-through text-xl font-semibold opacity-80"
+                      >
+                        {pkg.total}
+                      </motion.span>
                     </span>
                   )}
                 </div>
                 {pkg.discount && (
-                  <div className="mt-1 text-sm font-medium text-green-600 dark:text-green-400">
-                    Save {pkg.discount}
+                  <div
+                    className="mt-2 inline-flex items-center gap-1 self-start
+                  px-3 py-1 rounded-full text-xs font-bold
+                  bg-green-100 text-green-700
+                  dark:bg-green-900/40 dark:text-green-300
+                  animate-pulse"
+                  >
+                    💰 You Save {pkg.discount}
                   </div>
                 )}
               </div>
@@ -262,8 +281,13 @@ export function Packages() {
 
             <ul className="grid grid-cols-2 gap-3 mb-8 flex-1">
               {pkg.features.map((feature, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-600 dark:text-gray-300 text-xs font-medium">
-                  <div className={`mt-0.5 p-0.5 rounded-full bg-gradient-to-r ${pkg.color} bg-opacity-10 shrink-0`}>
+                <li
+                  key={i}
+                  className="flex items-start gap-2 text-gray-600 dark:text-gray-300 text-xs font-medium"
+                >
+                  <div
+                    className={`mt-0.5 p-0.5 rounded-full bg-gradient-to-r ${pkg.color} bg-opacity-10 shrink-0`}
+                  >
                     <Check className="w-3 h-3 text-white" />
                   </div>
                   <span className="leading-tight">{feature}</span>

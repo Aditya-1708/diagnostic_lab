@@ -1,13 +1,13 @@
 "use client";
 
 import {
-    IconActivityHeartbeat,
-    IconClipboardCopy,
-    IconDroplet,
-    IconHeartPause,
-    IconRun,
-    IconScan,
-    IconStethoscope,
+  IconActivityHeartbeat,
+  IconClipboardCopy,
+  IconDroplet,
+  IconHeartPause,
+  IconRun,
+  IconScan,
+  IconStethoscope,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
@@ -21,8 +21,8 @@ export function BentoGridDemo() {
 
       <BentoGrid className="max-w-6xl mx-auto px-6">
         {items.map((item, i) => (
-          <Link 
-            key={i} 
+          <Link
+            key={i}
             href={`https://wa.me/919900356000?text=Hi, I would like to inquire about ${item.title}`}
             target="_blank"
             className={i === 3 || i === 6 ? "md:col-span-2" : ""}
@@ -54,7 +54,7 @@ const items = [
         className="w-full h-full object-cover rounded-xl"
       />
     ),
-    icon: <IconStethoscope className="h-5 w-5 text-purple-500" />,
+    icon: <IconStethoscope className="h-5 w-5 text-rose-500" />,
   },
   {
     title: "ECG (Electrocardiogram)",
@@ -67,7 +67,7 @@ const items = [
         className="w-full h-full object-cover rounded-xl"
       />
     ),
-    icon: <IconActivityHeartbeat className="h-5 w-5 text-rose-500" />,
+    icon: <IconActivityHeartbeat className="h-5 w-5 text-red-500" />,
   },
   {
     title: "ECHO (Echocardiogram)",
@@ -80,7 +80,7 @@ const items = [
         className="w-full h-full object-cover rounded-xl"
       />
     ),
-    icon: <IconHeartPause className="h-5 w-5 text-red-500" />,
+    icon: <IconHeartPause className="h-5 w-5 text-rose-600" />,
   },
   {
     title: "Treadmill Test (TMT)",
@@ -93,7 +93,7 @@ const items = [
         className="w-full h-full object-cover rounded-xl"
       />
     ),
-    icon: <IconRun className="h-5 w-5 text-emerald-500" />,
+    icon: <IconRun className="h-5 w-5 text-red-600" />,
   },
   {
     title: "Blood Tests & Health Packages",
@@ -106,7 +106,7 @@ const items = [
         className="w-full h-full object-cover rounded-xl"
       />
     ),
-    icon: <IconDroplet className="h-5 w-5 text-sky-500" />,
+    icon: <IconDroplet className="h-5 w-5 text-rose-500" />,
   },
   {
     title: "Scans & Imaging",
@@ -119,10 +119,10 @@ const items = [
         className="w-full h-full object-cover rounded-xl"
       />
     ),
-    icon: <IconScan className="h-5 w-5 text-indigo-500" />,
+    icon: <IconScan className="h-5 w-5 text-red-500" />,
   },
   {
-    title: "Home Collection & Report Delivery",
+    title: "Home Collection & Online Report Delivery",
     description:
       "Get your reports delivered securely via WhatsApp or email — accessible 24×7 from anywhere.",
     header: (
@@ -132,7 +132,7 @@ const items = [
         className="w-full h-full object-cover rounded-xl"
       />
     ),
-    icon: <IconClipboardCopy className="h-5 w-5 text-fuchsia-500" />,
+    icon: <IconClipboardCopy className="h-5 w-5 text-rose-600" />,
   },
 ];
 

@@ -39,8 +39,8 @@ export function Specialists() {
       {/* Background Blobs for Glassmorphism Effect */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-rose-300/30 rounded-full blur-[120px] mix-blend-multiply animate-blob" />
-        <div className="absolute top-[20%] right-[-10%] w-[35%] h-[35%] bg-purple-300/30 rounded-full blur-[120px] mix-blend-multiply animate-blob animation-delay-2000" />
-        <div className="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] bg-blue-300/30 rounded-full blur-[120px] mix-blend-multiply animate-blob animation-delay-4000" />
+        <div className="absolute top-[20%] right-[-10%] w-[35%] h-[35%] bg-orange-300/30 rounded-full blur-[120px] mix-blend-multiply animate-blob animation-delay-2000" />
+        <div className="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] bg-red-300/30 rounded-full blur-[120px] mix-blend-multiply animate-blob animation-delay-4000" />
       </div>
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
@@ -78,8 +78,8 @@ export function Specialists() {
                 className={`
                   relative p-6 rounded-3xl transition-all duration-300
                   ${isSelected
-                    ? "bg-white/90 dark:bg-neutral-800/90 ring-2 ring-rose-500 shadow-xl z-10"
-                    : "bg-white/40 dark:bg-neutral-900/40 hover:bg-white/60 dark:hover:bg-neutral-800/60 border border-white/50 dark:border-white/10 shadow-lg backdrop-blur-md"
+                    ? "bg-red-100/80 dark:bg-red-900/30 ring-2 ring-red-500 shadow-xl z-10"
+                    : "bg-red-100/50 dark:bg-red-950/20 hover:bg-red-100/70 dark:hover:bg-red-900/30 border border-red-200/50 dark:border-red-900/20 shadow-lg backdrop-blur-md"
                   }
                 `}
               >
@@ -125,19 +125,19 @@ export function Specialists() {
                             placeholder="Your Name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            className="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-50 dark:bg-neutral-900/50 border border-slate-200 dark:border-neutral-700 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all text-sm"
+                            className="w-full pl-10 pr-4 py-3 rounded-xl bg-red-50 dark:bg-neutral-900/50 border border-red-200 dark:border-neutral-700 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all text-sm"
                             autoFocus
                           />
                         </div>
 
                         <div className="relative">
-                          <FileText className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                          <FileText className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-red-400" />
                           <input
                             type="text"
                             placeholder="Reason for Visit"
                             value={reason}
                             onChange={(e) => setReason(e.target.value)}
-                            className="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-50 dark:bg-neutral-900/50 border border-slate-200 dark:border-neutral-700 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all text-sm"
+                            className="w-full pl-10 pr-4 py-3 rounded-xl bg-red-50 dark:bg-neutral-900/50 border border-red-200 dark:border-neutral-700 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all text-sm"
                           />
                         </div>
 

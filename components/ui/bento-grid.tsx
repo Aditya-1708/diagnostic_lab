@@ -38,7 +38,7 @@ export const BentoGridItem = ({
     <div
       className={cn(
         // Card layout
-        "group/bento relative flex flex-col justify-between rounded-2xl border border-purple-100 bg-white/90 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900/90",
+        "group/bento relative flex flex-col justify-between rounded-2xl border border-red-200 bg-red-100/50 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-red-900/50 dark:bg-red-950/20",
         className
       )}
     >
