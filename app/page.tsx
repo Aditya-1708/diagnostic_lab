@@ -163,7 +163,85 @@ export default function Home() {
 
         {/* SPECIALISTS */}
         <Specialists />
+        {/* ABOUT */}
+        <section
+          id="about"
+          className="relative max-w-7xl mx-auto px-5 sm:px-8 py-14"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+          >
+            <div className="space-y-3 text-center lg:text-left">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-rose-700 to-red-500 bg-clip-text text-transparent">
+                About Us
+              </h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-md mx-auto lg:mx-0">
+                At{" "}
+                <span className="font-semibold text-rose-600 dark:text-rose-300">
+                  Tathagat Labs
+                </span>
+                , we make diagnostics affordable, accessible, and
+                elder-friendly.
+              </p>
+            </div>
 
+            {/* Mission & Vision */}
+            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                {
+                  title: "Our Mission",
+                  text: "To provide world-class diagnostic care with compassion and affordability.",
+                  icon: "❤️",
+                },
+                {
+                  title: "Our Vision",
+                  text: "To become the region’s most trusted and patient-friendly diagnostic center.",
+                  icon: "🌍",
+                },
+              ].map((info, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ y: -3 }}
+                  transition={{ duration: 0.25 }}
+                  className="p-5 rounded-2xl bg-white/80 dark:bg-neutral-800/60 backdrop-blur-md border border-rose-100 dark:border-neutral-700 shadow-sm"
+                >
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-2xl">{info.icon}</span>
+                    <h3 className="text-lg font-semibold">{info.title}</h3>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                    {info.text}
+                  </p>
+                </motion.div>
+              ))}
+
+              {/* CORE VALUES */}
+              <motion.div
+                whileHover={{ y: -3 }}
+                transition={{ duration: 0.25 }}
+                className="p-5 rounded-2xl bg-white/80 dark:bg-neutral-800/60 backdrop-blur-md border border-rose-100 dark:border-neutral-700 shadow-sm sm:col-span-2"
+              >
+                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                  <span className="text-2xl">⭐</span>
+                  Core Values
+                </h3>
+
+                <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 text-gray-700 dark:text-gray-300 text-sm">
+                  {coreValues.map((v) => (
+                    <li key={v} className="inline-flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-rose-500" />
+                      {v}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            </div>
+          </motion.div>
+        </section>
         {/* TESTIMONIALS */}
         <section
           id="testimonials"
