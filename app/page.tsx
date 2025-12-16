@@ -102,7 +102,7 @@ export default function Home() {
               </Link>
 
               <Link
-                href="tel:+919900356000"
+                href="tel:+919343103103"
                 className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl
                 bg-rose-50/80 backdrop-blur border border-rose-200
                 text-rose-700 hover:bg-rose-100 hover:shadow-md hover:-translate-y-0.5 transition-all"

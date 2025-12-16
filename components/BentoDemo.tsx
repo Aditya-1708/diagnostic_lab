@@ -23,7 +23,7 @@ export function BentoGridDemo() {
         {items.map((item, i) => (
           <Link
             key={i}
-            href={`https://wa.me/919900356000?text=Hi, I would like to inquire about ${item.title}`}
+            href={`https://wa.me/919343103103?text=Hi, I would like to inquire about ${item.title}`}
             target="_blank"
             className={i === 3 || i === 6 ? "md:col-span-2" : ""}
           >

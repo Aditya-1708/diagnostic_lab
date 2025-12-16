@@ -149,7 +149,7 @@ export function Specialists() {
                             Cancel
                           </button>
                           <Link
-                            href={`https://wa.me/919900356000?text=${encodeURIComponent(
+                            href={`https://wa.me/919343103103?text=${encodeURIComponent(
                               `Hi, I would like to book an appointment with a ${specialist.name}.\nName: ${name}\nReason: ${reason}`
                             )}`}
                             target="_blank"

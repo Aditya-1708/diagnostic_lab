@@ -296,7 +296,7 @@ export function Packages() {
             </ul>
 
             <Link
-              href={`https://wa.me/919900356000?text=Hi, I am interested in the ${pkg.title} package.`}
+              href={`https://wa.me/919343103103?text=Hi, I am interested in the ${pkg.title} package.`}
               target="_blank"
               className={`w-full py-3 rounded-xl font-semibold text-white shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 bg-gradient-to-r ${pkg.color}`}
             >
