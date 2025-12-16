@@ -445,10 +445,22 @@ export default function Home() {
       flex flex-col sm:flex-row items-center justify-between text-sm
       text-gray-500 dark:text-gray-400 gap-3"
             >
-              <p className="text-xs tracking-wide text-neutral-500">
-                © {new Date().getFullYear()} Tathagat Labs. All rights reserved.
+              <p className="text-xs text-neutral-500 leading-relaxed">
+                © {new Date().getFullYear()}{" "}
+                <span className="font-medium text-neutral-600">
+                  Tathagat Labs
+                </span>
+                . All rights reserved.
                 <span className="block mt-1">
-                  A Brand Story Socials creation.
+                  <a
+                    href="https://www.instagram.com/brandstorysocials?igsh=MXFoamFnNWpoZDR3cA=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-neutral-400 hover:text-red-500 transition-colors duration-200"
+                  >
+                    Crafted by{" "}
+                    <span className="font-medium">Brand Story Socials</span>
+                  </a>
                 </span>
               </p>
             </div>
