@@ -1618,13 +1618,30 @@ const testimonials = [
         response: "Reports were delivered on WhatsApp within a few hours. Very convenient for elders."
     }
 ];
+const openingHours = [
+    {
+        days: "Monday - Saturday",
+        hours: "07:00 AM - 09:30 PM"
+    },
+    {
+        days: "Sunday",
+        hours: "07:00 AM - 01:30 PM"
+    }
+];
+const quickLinks = [
+    "Home",
+    "Services",
+    "About Us",
+    "Testimonials",
+    "Location"
+];
 function Home() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen text-gray-900 dark:text-white overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$components$2f$NavbarDemo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NavbarDemo"], {}, void 0, false, {
                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                lineNumber: 56,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1649,14 +1666,14 @@ function Home() {
                                                 children: "Tathagat polyclinic"
                                             }, void 0, false, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 74,
+                                                lineNumber: 81,
                                                 columnNumber: 15
                                             }, this),
                                             ", diagnostics and diabetes centre"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 77,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -1665,7 +1682,7 @@ function Home() {
                                         children: "Bringing world-class diagnostic technology to your doorstep — fast, accurate, and filled with care."
                                     }, void 0, false, {
                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1675,13 +1692,13 @@ function Home() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "https://wa.me/919343103103",
                                                 target: "_blank",
-                                                className: "group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-br from-rose-600 via-red-500 to-red-600 text-white shadow-lg hover:brightness-110 hover:-translate-y-0.5 transition-all",
+                                                className: "group inline-flex items-center gap-2 px-6 py-3 rounded-xl   bg-gradient-to-br from-rose-600 via-red-500 to-red-600   text-white shadow-lg hover:brightness-110 hover:-translate-y-0.5 transition-all",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
                                                         className: "w-5 h-5 group-hover:rotate-6 transition-transform"
                                                     }, void 0, false, {
                                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                        lineNumber: 99,
+                                                        lineNumber: 106,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Book Test",
@@ -1689,48 +1706,48 @@ function Home() {
                                                         className: "w-4 h-4 opacity-80 group-hover:translate-x-0.5 transition-transform"
                                                     }, void 0, false, {
                                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                        lineNumber: 101,
+                                                        lineNumber: 108,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 92,
+                                                lineNumber: 99,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "tel:+919343103103",
-                                                className: "group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-rose-50/80 backdrop-blur border border-rose-200 text-rose-700 hover:bg-rose-100 hover:shadow-md hover:-translate-y-0.5 transition-all",
+                                                className: "group inline-flex items-center gap-2 px-6 py-3 rounded-xl   bg-rose-50/80 backdrop-blur border border-rose-200   text-rose-700 hover:bg-rose-100 hover:shadow-md hover:-translate-y-0.5 transition-all",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
                                                         className: "w-5 h-5 group-hover:-rotate-6 transition-transform"
                                                     }, void 0, false, {
                                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                        lineNumber: 110,
+                                                        lineNumber: 117,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Call Now"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 111,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                        lineNumber: 88,
+                                        lineNumber: 95,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                         variants: fadeUp,
-                                        className: "inline-flex items-center gap-2 px-4 py-1 rounded-full bg-white/70 backdrop-blur-md border border-rose-200 shadow-sm mx-auto lg:mx-0",
+                                        className: "inline-flex items-center gap-2 px-4 py-1 rounded-full   bg-white/70 backdrop-blur-md border border-rose-200 shadow-sm mx-auto lg:mx-0",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
                                                 className: "h-4 w-4 text-red-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 127,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1738,19 +1755,19 @@ function Home() {
                                                 children: "NABL-grade accuracy • Elder-friendly service"
                                             }, void 0, false, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 121,
+                                                lineNumber: 128,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 122,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                lineNumber: 64,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1796,28 +1813,28 @@ function Home() {
                                             }
                                         }, src, false, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 143,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                lineNumber: 128,
+                                lineNumber: 135,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                        lineNumber: 60,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$components$2f$Packages$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Packages"], {}, void 0, false, {
                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                        lineNumber: 157,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1825,17 +1842,17 @@ function Home() {
                         className: "max-w-6xl mx-auto px-5 sm:px-8 py-10",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$components$2f$BentoDemo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BentoGridDemo"], {}, void 0, false, {
                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                            lineNumber: 161,
+                            lineNumber: 168,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                        lineNumber: 160,
+                        lineNumber: 167,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$components$2f$Specialists$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Specialists"], {}, void 0, false, {
                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                        lineNumber: 165,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1866,7 +1883,7 @@ function Home() {
                                             children: "About Us"
                                         }, void 0, false, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 179,
+                                            lineNumber: 186,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1879,20 +1896,20 @@ function Home() {
                                                     children: "Tathagat Labs"
                                                 }, void 0, false, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 191,
                                                     columnNumber: 17
                                                 }, this),
                                                 ", we make diagnostics affordable, accessible, and elder-friendly."
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 182,
+                                            lineNumber: 189,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                    lineNumber: 178,
+                                    lineNumber: 185,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1926,7 +1943,7 @@ function Home() {
                                                                 children: info.icon
                                                             }, void 0, false, {
                                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                lineNumber: 213,
+                                                                lineNumber: 220,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1934,13 +1951,13 @@ function Home() {
                                                                 children: info.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                lineNumber: 214,
+                                                                lineNumber: 221,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                        lineNumber: 212,
+                                                        lineNumber: 219,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1948,13 +1965,13 @@ function Home() {
                                                         children: info.text
                                                     }, void 0, false, {
                                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                        lineNumber: 216,
+                                                        lineNumber: 223,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 206,
+                                                lineNumber: 213,
                                                 columnNumber: 17
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1974,14 +1991,14 @@ function Home() {
                                                             children: "⭐"
                                                         }, void 0, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 229,
+                                                            lineNumber: 236,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Core Values"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 228,
+                                                    lineNumber: 235,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1993,42 +2010,42 @@ function Home() {
                                                                     className: "h-2 w-2 rounded-full bg-rose-500"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                    lineNumber: 236,
+                                                                    lineNumber: 243,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 v
                                                             ]
                                                         }, v, true, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 235,
+                                                            lineNumber: 242,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 233,
+                                                    lineNumber: 240,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 223,
+                                            lineNumber: 230,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                    lineNumber: 193,
+                                    lineNumber: 200,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                            lineNumber: 171,
+                            lineNumber: 178,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                        lineNumber: 167,
+                        lineNumber: 174,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2036,11 +2053,11 @@ function Home() {
                         className: "max-w-7xl mx-auto px-5 sm:px-8 py-14",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-center text-4xl sm:text-5xl font-bold mb-8 bg-gradient-to-r from-rose-700 via-red-600 to-red-500 bg-clip-text text-transparent",
+                                className: "text-center text-4xl sm:text-5xl font-bold mb-8   bg-gradient-to-r from-rose-700 via-red-600 to-red-500   bg-clip-text text-transparent",
                                 children: "What Patients Say"
                             }, void 0, false, {
                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                lineNumber: 250,
+                                lineNumber: 257,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2061,7 +2078,7 @@ function Home() {
                                         viewport: {
                                             once: true
                                         },
-                                        className: "p-5 rounded-2xl bg-white/90 dark:bg-neutral-900/80 border border-rose-100 shadow-sm",
+                                        className: "p-5 rounded-2xl bg-white/90 dark:bg-neutral-900/80   border border-rose-100 shadow-sm",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
                                                 className: "text-gray-700 text-sm leading-relaxed mb-2",
@@ -2071,7 +2088,7 @@ function Home() {
                                                         children: "“"
                                                     }, void 0, false, {
                                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                        lineNumber: 270,
+                                                        lineNumber: 277,
                                                         columnNumber: 19
                                                     }, this),
                                                     t.response,
@@ -2080,13 +2097,13 @@ function Home() {
                                                         children: "”"
                                                     }, void 0, false, {
                                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                        lineNumber: 272,
+                                                        lineNumber: 279,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 269,
+                                                lineNumber: 276,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("figcaption", {
@@ -2097,24 +2114,24 @@ function Home() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 274,
+                                                lineNumber: 281,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, t.name, true, {
                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 267,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                lineNumber: 258,
+                                lineNumber: 265,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                        lineNumber: 246,
+                        lineNumber: 253,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2125,11 +2142,11 @@ function Home() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "inline-block mb-3 px-4 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300",
+                                            className: "inline-block mb-3 px-4 py-1 rounded-full text-xs font-medium   bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300",
                                             children: "Our Location"
                                         }, void 0, false, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 287,
+                                            lineNumber: 294,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2137,7 +2154,7 @@ function Home() {
                                             children: "Visit Tathagat Polyclinic & Diagnostics"
                                         }, void 0, false, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 294,
+                                            lineNumber: 301,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2145,7 +2162,7 @@ function Home() {
                                             children: "Conveniently located with easy accessibility, our clinic offers modern diagnostics and patient-focused healthcare services."
                                         }, void 0, false, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 298,
+                                            lineNumber: 305,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2158,7 +2175,7 @@ function Home() {
                                                             children: "Address:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 305,
+                                                            lineNumber: 312,
                                                             columnNumber: 19
                                                         }, this),
                                                         " ",
@@ -2166,52 +2183,68 @@ function Home() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 304,
+                                                    lineNumber: 311,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-medium text-red-600 dark:text-red-400",
                                                             children: "Timings:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 311,
+                                                            lineNumber: 318,
                                                             columnNumber: 19
                                                         }, this),
-                                                        " ",
-                                                        "Mon – Sat · 7:00 AM – 9:30 PM | Sun · 7:00 AM – 1:30 PM"
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "mt-1 text-gray-700 dark:text-gray-300",
+                                                            children: openingHours.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: [
+                                                                        item.days,
+                                                                        ": ",
+                                                                        item.hours
+                                                                    ]
+                                                                }, item.days, true, {
+                                                                    fileName: "[project]/diagnostic_lab/app/page.tsx",
+                                                                    lineNumber: 323,
+                                                                    columnNumber: 23
+                                                                }, this))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/diagnostic_lab/app/page.tsx",
+                                                            lineNumber: 321,
+                                                            columnNumber: 19
+                                                        }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 310,
+                                                    lineNumber: 317,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 303,
+                                            lineNumber: 310,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: "https://maps.google.com/?q=Tathagat+Polyclinic+And+Diagnostics",
                                             target: "_blank",
                                             rel: "noopener noreferrer",
-                                            className: "inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 text-white text-sm font-medium shadow-md hover:shadow-lg hover:scale-[1.02] transition-all",
+                                            className: "inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-xl   bg-gradient-to-r from-red-600 to-rose-600   text-white text-sm font-medium   shadow-md hover:shadow-lg hover:scale-[1.02]   transition-all",
                                             children: "Get Directions →"
                                         }, void 0, false, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 318,
+                                            lineNumber: 331,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                    lineNumber: 286,
+                                    lineNumber: 293,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-full h-[420px] rounded-3xl overflow-hidden border border-red-200 dark:border-red-900/40 shadow-sm",
+                                    className: "w-full h-[420px] rounded-3xl overflow-hidden   border border-red-200 dark:border-red-900/40   shadow-sm",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
                                         src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5624020068663!2d77.5859567!3d13.0635029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1822109d089d%3A0x9494c2da962c21f7!2sTathagat%20Polyclinic%20And%20Diagnostics!5e0!3m2!1sen!2sin!4v1765875961443!5m2!1sen!2sin",
                                         className: "w-full h-full border-0",
@@ -2220,27 +2253,27 @@ function Home() {
                                         allowFullScreen: true
                                     }, void 0, false, {
                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                        lineNumber: 338,
+                                        lineNumber: 351,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                    lineNumber: 333,
+                                    lineNumber: 346,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                            lineNumber: 284,
+                            lineNumber: 291,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                        lineNumber: 283,
+                        lineNumber: 290,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-                        className: "mt-14 bg-gradient-to-b from-white via-rose-50/40 to-red-50/50 dark:from-neutral-900 dark:via-red-950/30 dark:to-neutral-950 border-t border-rose-100/40 dark:border-neutral-800/60",
+                        className: "mt-14 bg-gradient-to-b from-white via-rose-50/40 to-red-50/50   dark:from-neutral-900 dark:via-red-950/30 dark:to-neutral-950   border-t border-rose-100/40 dark:border-neutral-800/60",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "max-w-7xl mx-auto px-6 sm:px-10 py-12",
                             children: [
@@ -2258,21 +2291,21 @@ function Home() {
                                                             width: 36
                                                         }, void 0, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 360,
+                                                            lineNumber: 373,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-red-500 to-red-600",
+                                                            className: "text-xl font-semibold text-transparent bg-clip-text   bg-gradient-to-r from-rose-600 via-red-500 to-red-600",
                                                             children: "Tathagat Labs"
                                                         }, void 0, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 361,
+                                                            lineNumber: 374,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 359,
+                                                    lineNumber: 372,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2280,13 +2313,13 @@ function Home() {
                                                     children: "Transparent, affordable, and elder-friendly diagnostics. Trusted for accurate and compassionate care."
                                                 }, void 0, false, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 368,
+                                                    lineNumber: 381,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 358,
+                                            lineNumber: 371,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2296,41 +2329,35 @@ function Home() {
                                                     children: "Quick Links"
                                                 }, void 0, false, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 376,
+                                                    lineNumber: 389,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                     className: "space-y-2 text-gray-600 dark:text-gray-400 text-sm",
-                                                    children: [
-                                                        "Home",
-                                                        "Services",
-                                                        "About Us",
-                                                        "Testimonials",
-                                                        "Location"
-                                                    ].map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: quickLinks.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                 href: `#${l.toLowerCase().replace(/ /g, "")}`,
                                                                 className: "hover:text-red-600 transition-colors",
                                                                 children: l
                                                             }, void 0, false, {
                                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                lineNumber: 386,
+                                                                lineNumber: 393,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, l, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 385,
+                                                            lineNumber: 392,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 377,
+                                                    lineNumber: 390,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 375,
+                                            lineNumber: 388,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2340,7 +2367,7 @@ function Home() {
                                                     children: "Contact"
                                                 }, void 0, false, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 399,
+                                                    lineNumber: 406,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2352,7 +2379,7 @@ function Home() {
                                                                     className: "inline h-4 w-4 text-red-500 mr-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                    lineNumber: 402,
+                                                                    lineNumber: 409,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2360,13 +2387,13 @@ function Home() {
                                                                     children: "+91 93431 03103"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                    lineNumber: 403,
+                                                                    lineNumber: 410,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 401,
+                                                            lineNumber: 408,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2375,7 +2402,7 @@ function Home() {
                                                                     className: "inline h-4 w-4 text-red-500 mr-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                    lineNumber: 406,
+                                                                    lineNumber: 413,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2384,31 +2411,9 @@ function Home() {
                                                                     children: "WhatsApp Us"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                    lineNumber: 407,
+                                                                    lineNumber: 414,
                                                                     columnNumber: 21
                                                                 }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 405,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                            children: "info@tathagatlabs.com"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 411,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                            children: [
-                                                                "838, A Block, Sahakar Nagar ",
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                    fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                    lineNumber: 413,
-                                                                    columnNumber: 49
-                                                                }, this),
-                                                                "Bengaluru, Karnataka 560092"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
@@ -2416,22 +2421,44 @@ function Home() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            children: "info@tathagatlabs.com"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/diagnostic_lab/app/page.tsx",
+                                                            lineNumber: 418,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            children: [
+                                                                "#123, Tathagat Diagnostics Lane,",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                    fileName: "[project]/diagnostic_lab/app/page.tsx",
+                                                                    lineNumber: 421,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                "Bengaluru, India"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/diagnostic_lab/app/page.tsx",
+                                                            lineNumber: 419,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             children: "Landline: 080-23624484"
                                                         }, void 0, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 416,
+                                                            lineNumber: 424,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 400,
+                                                    lineNumber: 407,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 398,
+                                            lineNumber: 405,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2441,85 +2468,68 @@ function Home() {
                                                     children: "Visit Us"
                                                 }, void 0, false, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 422,
+                                                    lineNumber: 430,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "text-sm text-gray-600 dark:text-gray-400 mb-4 space-y-1",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "font-medium",
-                                                                    children: "Mon – Sat:"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                    lineNumber: 425,
-                                                                    columnNumber: 21
-                                                                }, this),
-                                                                " 7:00 AM – 9:30 PM"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 424,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "font-medium",
-                                                                    children: "Sunday:"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                                    lineNumber: 428,
-                                                                    columnNumber: 21
-                                                                }, this),
-                                                                " 7:00 AM – 1:30 PM"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 427,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-sm text-gray-600 dark:text-gray-400 mb-3",
+                                                    children: "Open daily"
+                                                }, void 0, false, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 423,
+                                                    lineNumber: 431,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                    className: "text-sm text-gray-700 dark:text-gray-300 font-medium space-y-1 mb-4",
+                                                    children: openingHours.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            children: [
+                                                                item.days,
+                                                                ": ",
+                                                                item.hours
+                                                            ]
+                                                        }, item.days, true, {
+                                                            fileName: "[project]/diagnostic_lab/app/page.tsx",
+                                                            lineNumber: 436,
+                                                            columnNumber: 21
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/diagnostic_lab/app/page.tsx",
+                                                    lineNumber: 434,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                     href: "https://wa.me/919343103103",
                                                     target: "_blank",
-                                                    className: "inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-br from-rose-600 via-red-500 to-red-600 text-white shadow-lg hover:brightness-110 hover:-translate-y-0.5 transition-all text-sm font-semibold",
+                                                    className: "inline-flex items-center gap-2 px-5 py-3 rounded-xl   bg-gradient-to-br from-rose-600 via-red-500 to-red-600   text-white shadow-lg hover:brightness-110 hover:-translate-y-0.5 transition-all text-sm font-semibold",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 439,
+                                                            lineNumber: 449,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Book a Test"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 432,
+                                                    lineNumber: 442,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                            lineNumber: 421,
+                                            lineNumber: 429,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                    lineNumber: 356,
+                                    lineNumber: 369,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "border-t border-rose-100/50 dark:border-neutral-800 mt-10 pt-5 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500 dark:text-gray-400 gap-3",
+                                    className: "border-t border-rose-100/50 dark:border-neutral-800 mt-10 pt-5   flex flex-col sm:flex-row items-center justify-between text-sm   text-gray-500 dark:text-gray-400 gap-3",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$diagnostic_lab$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-xs text-neutral-500 leading-relaxed",
                                         children: [
@@ -2531,7 +2541,7 @@ function Home() {
                                                 children: "Tathagat Labs"
                                             }, void 0, false, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 453,
+                                                lineNumber: 463,
                                                 columnNumber: 17
                                             }, this),
                                             ". All rights reserved.",
@@ -2550,52 +2560,52 @@ function Home() {
                                                             children: "Brand Story Socials"
                                                         }, void 0, false, {
                                                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                            lineNumber: 465,
+                                                            lineNumber: 475,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                    lineNumber: 458,
+                                                    lineNumber: 468,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                                lineNumber: 457,
+                                                lineNumber: 467,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                        lineNumber: 451,
+                                        lineNumber: 461,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/diagnostic_lab/app/page.tsx",
-                                    lineNumber: 446,
+                                    lineNumber: 456,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/diagnostic_lab/app/page.tsx",
-                            lineNumber: 355,
+                            lineNumber: 368,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/diagnostic_lab/app/page.tsx",
-                        lineNumber: 350,
+                        lineNumber: 363,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/diagnostic_lab/app/page.tsx",
-                lineNumber: 58,
+                lineNumber: 65,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/diagnostic_lab/app/page.tsx",
-        lineNumber: 55,
+        lineNumber: 62,
         columnNumber: 5
     }, this);
 }

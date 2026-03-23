@@ -50,6 +50,13 @@ const testimonials = [
   },
 ];
 
+const openingHours = [
+  { days: "Monday - Saturday", hours: "07:00 AM - 09:30 PM" },
+  { days: "Sunday", hours: "07:00 AM - 01:30 PM" },
+];
+
+const quickLinks = ["Home", "Services", "About Us", "Testimonials", "Location"];
+
 export default function Home() {
   return (
     <div className="min-h-screen text-gray-900 dark:text-white overflow-hidden">
@@ -72,7 +79,7 @@ export default function Home() {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-red-500 to-red-600">
-                Tathagat polyclonic
+                Tathagat polyclinic
               </span>
               , diagnostics and diabetes centre
             </motion.h1>
@@ -307,12 +314,18 @@ export default function Home() {
                   </span>{" "}
                   Bengaluru, Karnataka, India
                 </p>
-                <p>
+                <div>
                   <span className="font-medium text-red-600 dark:text-red-400">
                     Timings:
-                  </span>{" "}
-                  Mon – Sat · 9:00 AM – 8:00 PM
-                </p>
+                  </span>
+                  <ul className="mt-1 text-gray-700 dark:text-gray-300">
+                    {openingHours.map((item) => (
+                      <li key={item.days}>
+                        {item.days}: {item.hours}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
 
               <a
@@ -375,13 +388,7 @@ export default function Home() {
               <div>
                 <h4 className="text-lg font-semibold mb-3">Quick Links</h4>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
-                  {[
-                    "Home",
-                    "Services",
-                    "About Us",
-                    "Testimonials",
-                    "Location",
-                  ].map((l) => (
+                  {quickLinks.map((l) => (
                     <li key={l}>
                       <a
                         href={`#${l.toLowerCase().replace(/ /g, "")}`}
@@ -421,10 +428,16 @@ export default function Home() {
               {/* HOURS & CTA */}
               <div>
                 <h4 className="text-lg font-semibold mb-3">Visit Us</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                  Open daily{" "}
-                  <span className="font-medium">7:00 AM – 9:00 PM</span>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                  Open daily
                 </p>
+                <ul className="text-sm text-gray-700 dark:text-gray-300 font-medium space-y-1 mb-4">
+                  {openingHours.map((item) => (
+                    <li key={item.days}>
+                      {item.days}: {item.hours}
+                    </li>
+                  ))}
+                </ul>
 
                 <a
                   href="https://wa.me/919343103103"
