@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/umesh/Code/diagnostic_lab/app/page.tsx"],"sourcesContent":["import Link from \"next/link\";\n\nexport default function Home() {\n  return (\n    <div>\n      <></>\n      <Link href=\"/consultation\">\n        <button className=\"btn\">Go to Consultation</button>\n      </Link>\n\n      <Link href=\"/delivery\">\n        <button className=\"btn\">Go to Delivery</button>\n      </Link>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,gQAAC;;0BACC;0BACA,gQAAC,4MAAI;gBAAC,MAAK;0BACT,cAAA,gQAAC;oBAAO,WAAU;8BAAM;;;;;;;;;;;0BAG1B,gQAAC,4MAAI;gBAAC,MAAK;0BACT,cAAA,gQAAC;oBAAO,WAAU;8BAAM;;;;;;;;;;;;;;;;;AAIhC","debugId":null}}]
+}
